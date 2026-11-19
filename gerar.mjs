@@ -78,6 +78,7 @@ await writeFile('index.html', page({
 await mkdir('personagens', { recursive: true });
 for (const [index, character] of characters.entries()) {
   const next = characters[(index + 1) % characters.length];
+  const youtubeId = encodeURIComponent(character.video);
   await writeFile(`personagens/${character.id}.html`, page({
     title: character.name,
     description: character.description,
@@ -99,10 +100,13 @@ for (const [index, character] of characters.entries()) {
 <span class="motion-ring" aria-hidden="true"></span><span class="motion-ring ring-two" aria-hidden="true"></span>
 <button class="button motion-button" type="button" aria-pressed="false">Pausar animação</button>
 </div></div>
-<div><h2>Vídeo de apresentação</h2><video controls playsinline preload="none" poster="${photo(character, '../')}" aria-label="Vídeo de apresentação de ${esc(character.name)}">
+<div><h2>Vídeo do personagem</h2>
+<iframe class="youtube-player" src="https://www.youtube-nocookie.com/embed/${youtubeId}" title="Vídeo de ${esc(character.name)} no YouTube" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+<a class="button outline youtube-link" href="https://youtu.be/${youtubeId}" target="_blank" rel="noopener noreferrer">Abrir no YouTube <span aria-hidden="true">→</span></a>
+<details class="profile-teaser"><summary>Teaser do Arquivo Geek</summary><video controls playsinline preload="none" poster="${photo(character, '../')}" aria-label="Vídeo de apresentação de ${esc(character.name)}">
 <source src="../midia/${character.id}.mp4" type="video/mp4">
 <a href="../midia/${character.id}.mp4">Baixar vídeo</a></video>
-<p class="media-caption">Teaser visual sem áudio.</p></div>
+<p class="media-caption">Teaser visual sem áudio.</p></details></div>
 </section>
 <a class="next-profile" href="${profile(next, '../')}"><span><small class="kicker">PRÓXIMO PERSONAGEM</small><strong>${esc(next.name)}</strong></span><span aria-hidden="true">→</span></a>
 </div>`
