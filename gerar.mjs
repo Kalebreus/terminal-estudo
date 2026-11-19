@@ -48,6 +48,7 @@ const page = ({ title, description, main, current = '', root = './' }) => `<!doc
 const card = character => `<article class="character-card" ${theme(character)} data-character="${character.id}" data-search="${esc([character.name, character.series, character.category, character.role, character.description].join(' '))}">
 <a href="${profile(character)}"><div class="card-image" data-id="${character.id}">${image(character, './')}</div>
 <div class="card-copy"><span class="kicker">${esc(character.series)}</span><h3>${esc(character.name)}</h3><span class="card-arrow" aria-hidden="true">→</span></div></a>
+<a class="card-video" href="${profile(character)}#video" aria-label="Assistir ao vídeo de ${esc(character.name)}">▶ Assistir ao vídeo</a>
 <button type="button" class="favorite" data-favorite="${character.id}" aria-pressed="false" aria-label="Favoritar ${esc(character.name)}">♡</button>
 </article>`;
 
@@ -91,7 +92,7 @@ for (const [index, character] of characters.entries()) {
 <div class="profile-copy"><p class="kicker"><span class="signal"></span> ${esc(character.series)} / ${esc(character.category)}</p>
 <h1>${esc(character.name)}</h1><p class="profile-role">${esc(character.role)}</p>
 <h2>Biografia</h2><p class="bio">${esc(character.description)}</p>
-<a class="button primary" href="../loja.html?personagem=${character.id}">Ver produtos <span>→</span></a></div>
+<div class="profile-actions"><a class="button primary" href="#video">▶ Assistir ao vídeo</a><a class="button outline" href="../loja.html?personagem=${character.id}">Ver produtos <span>→</span></a></div></div>
 <figure class="profile-image" data-id="${character.id}">${image(character, '../', 'eager')}<figcaption>Arte de ${esc(character.name)}</figcaption></figure>
 </section>
 <section class="section media-section" aria-label="Arte e vídeo de ${esc(character.name)}">
@@ -100,7 +101,7 @@ for (const [index, character] of characters.entries()) {
 <span class="motion-ring" aria-hidden="true"></span><span class="motion-ring ring-two" aria-hidden="true"></span>
 <button class="button motion-button" type="button" aria-pressed="false">Pausar animação</button>
 </div></div>
-<div><h2>Vídeo do personagem</h2>
+<div id="video"><h2>Vídeo do personagem</h2>
 <iframe class="youtube-player" src="https://www.youtube-nocookie.com/embed/${youtubeId}" title="Vídeo de ${esc(character.name)} no YouTube" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
 <a class="button outline youtube-link" href="https://youtu.be/${youtubeId}" target="_blank" rel="noopener noreferrer">Abrir no YouTube <span aria-hidden="true">→</span></a>
 <details class="profile-teaser"><summary>Teaser do Arquivo Geek</summary><video controls playsinline preload="none" poster="${photo(character, '../')}" aria-label="Vídeo de apresentação de ${esc(character.name)}">
