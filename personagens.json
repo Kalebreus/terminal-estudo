@@ -1,0 +1,93 @@
+[
+  {
+    "id": "doflamingo",
+    "name": "Donquixote Doflamingo",
+    "series": "One Piece",
+    "role": "O estrategista de Dressrosa",
+    "category": "Estratégia",
+    "color": "#f05b98",
+    "tone": "#211523",
+    "portrait": "pink",
+    "image": "baixados (1).jpg",
+    "video": "Mqh0KeCGSS8",
+    "description": "Capitão dos Piratas Donquixote e antigo soberano de Dressrosa, Doflamingo manipula pessoas e acontecimentos com a mesma precisão com que controla seus fios. Carismático e cruel, transforma influência, medo e ambição em armas — e raramente deixa o adversário perceber quem está conduzindo o jogo."
+  },
+  {
+    "id": "gengar",
+    "name": "Gengar",
+    "series": "Pokémon",
+    "role": "A sombra que adora uma travessura",
+    "category": "Fantasia",
+    "color": "#ae88ff",
+    "tone": "#1c1730",
+    "portrait": "ghost",
+    "image": "Gengar.jpg",
+    "video": "kLZ7yepDVQ8",
+    "description": "Pokémon do tipo Fantasma e Venenoso, Gengar espreita nas sombras e é conhecido por suas brincadeiras assustadoras. Seu sorriso travesso esconde um competidor perigoso: em batalha, combina velocidade, truques e ataques fantasmagóricos para surpreender quem baixa a guarda."
+  },
+  {
+    "id": "guts",
+    "name": "Guts",
+    "series": "Berserk",
+    "role": "O Espadachim Negro",
+    "category": "Dark fantasy",
+    "color": "#f0a76a",
+    "tone": "#211d20",
+    "portrait": "warrior",
+    "image": "wallpaper pc berserk black _1308x736_.jpg",
+    "video": "g0E6vDWLVpU",
+    "description": "Marcado por uma vida de violência e perdas, Guts percorre um mundo brutal empunhando a gigantesca Dragon Slayer. Sua força não vem apenas da espada: é a teimosia de continuar lutando, proteger quem ama e enfrentar um destino que parece impossível de vencer."
+  },
+  {
+    "id": "soldier-11",
+    "name": "Soldier 11",
+    "series": "Zenless Zone Zero",
+    "role": "Disciplina de fogo e aço",
+    "category": "Ação",
+    "color": "#ff7957",
+    "tone": "#291a1c",
+    "portrait": "soldier",
+    "image": "𝗦𝗼𝗹𝗱𝗶𝗲𝗿 𝟭𝟭— 𝒁𝒁𝒁 ┆ 𝘾𝙞𝙣𝙚𝙢𝙖🎥_.jpg",
+    "video": "cdjl01vqjEQ",
+    "description": "Integrante de uma unidade de elite, Soldier 11 leva a disciplina militar para cada missão em Nova Eridu. Reservada e focada, ela trata o combate como um protocolo: movimentos precisos, golpes incendiários e compromisso absoluto com o objetivo — mesmo quando a situação sai do controle."
+  },
+  {
+    "id": "veigar",
+    "name": "Veigar",
+    "series": "League of Legends",
+    "role": "O pequeno mestre do mal",
+    "category": "RPG",
+    "color": "#61d4d0",
+    "tone": "#142528",
+    "portrait": "mage",
+    "image": "✨┋Veigarᬸ.jpg",
+    "video": "TP7UP5ZlFY0",
+    "description": "Pequeno yordle de poderes arcanos imensos, Veigar decidiu abraçar o papel de grande vilão de Runeterra. Seu ego é tão exagerado quanto sua magia: ele sonha dominar o mundo, mas por trás da pose sombria existe uma figura excêntrica, teatral e imprevisível."
+  },
+  {
+    "id": "angewomon",
+    "name": "Angewomon",
+    "series": "Digimon",
+    "role": "A guardiã da esperança",
+    "category": "Aventura",
+    "color": "#e8d17d",
+    "tone": "#27221b",
+    "portrait": "angel",
+    "image": "Angewomon (1).jpg",
+    "video": "LLfVqnfzzZE",
+    "description": "Uma Digimon Anjo de nível Perfeito, Angewomon representa proteção, coragem e esperança. Sua presença serena contrasta com o poder que libera contra as forças das trevas; quando seus companheiros estão ameaçados, ela luta com determinação e uma energia sagrada difícil de deter."
+  },
+  {
+    "id": "frieren",
+    "name": "Frieren",
+    "series": "Frieren: Beyond Journey’s End",
+    "role": "Uma maga além do tempo",
+    "category": "Fantasia",
+    "color": "#9be3b1",
+    "tone": "#172521",
+    "portrait": "elf",
+    "image": "Frieren【2】.jpg",
+    "video": "_kUFws-dHEI",
+    "description": "Uma maga élfica que viveu muito além da duração de uma vida humana, Frieren participou da jornada que derrotou o Rei Demônio. Depois da aventura, passa a revisitar o mundo e a compreender melhor as pessoas que conheceu. Sua longa vida dá outro peso às lembranças, às despedidas e aos pequenos momentos."
+  }
+]

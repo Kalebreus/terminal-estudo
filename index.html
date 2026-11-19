@@ -1,64 +1,71 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0d12"><meta name="description" content="Uma galeria interativa de personagens marcantes da cultura geek."><title>Arquivo Geek — personagens que ficam</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css?v=14"><script src="./index.js?v=19" defer></script></head><body>
-<a class="skip" href="#colecao">Pular para a coleção</a><header class="header"><a class="brand" href="./"><span class="mark">A<small>G</small></span>ARQUIVO <em>GEEK</em></a><nav><a href="#colecao">Coleção</a><a href="#sobre">Sobre</a></nav><button class="theme" aria-label="Ativar tema claro">◐ <span>Tema escuro</span></button></header>
-<main><section class="intro"><div><p class="eyebrow">● COLEÇÃO DIGITAL · VOL. 01</p><h1>Personagens<br><span>que ficam.</span></h1><p class="lead">Um arquivo pessoal de figuras que atravessam mundos, histórias e gerações. Explore a coleção e escolha seu próximo destaque.</p><a class="cta" href="#colecao">Explorar coleção <b>↘</b></a></div><aside><strong>07</strong><span>PERSONAGENS<br>EM ARQUIVO</span><i></i><small>EDIÇÃO 001</small></aside></section>
-<section class="collection" id="colecao"><div class="heading"><div><p class="eyebrow">SELEÇÃO CURADA</p><h2>A coleção</h2></div><span class="count"><b id="count">07</b> arquivos</span></div><div class="toolbar"><label class="search">⌕<input id="search" type="search" aria-label="Buscar personagem ou universo" placeholder="Buscar personagem ou universo..."><kbd>/</kbd></label><button class="filter" id="filter" aria-pressed="false">♡ Favoritos <b id="fcount">0</b></button></div><div class="layout"><article class="feature" id="feature" aria-live="polite"></article><div class="cards" id="cards" aria-label="Personagens"></div></div><p id="empty" class="empty" hidden>Nenhum personagem encontrado. Tente outro termo ou desative os favoritos.</p></section>
-<section id="sobre" class="about"><div><p class="eyebrow">FEITO COM CURIOSIDADE</p><p>Este projeto começou como um exercício de HTML, CSS e JavaScript. Agora é uma pequena vitrine interativa para celebrar histórias que inspiram.</p></div><span>✳</span></section></main>
-<footer><span>ARQUIVO GEEK · PROJETO INDEPENDENTE</span><a href="https://github.com/Kalebreus/terminal-estudo" target="_blank" rel="noreferrer">Ver código no GitHub ↗</a><span>© <b id="year"></b></span></footer></body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c0d10">
+<meta name="description" content="Explore sete personagens da cultura geek em perfis com biografias, artes, vídeos e colecionáveis.">
+<title>Personagens de anime, mangá e games | Arquivo Geek</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./style.css">
+<script src="./index.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="./index.html" aria-label="Arquivo Geek, início"><span class="brand-icon" aria-hidden="true">✦</span><span>ARQUIVO<span class="brand-accent">GEEK</span></span></a>
+<nav aria-label="Menu principal">
+<a href="./index.html" aria-current="page">Início</a>
+<a href="./index.html#colecao">Personagens</a>
+<a href="./loja.html">Loja</a>
+</nav>
+<a class="cart-link" href="./loja.html#carrinho"><span class="cart-label">Carrinho</span><span aria-hidden="true">▤</span><b data-cart-count>0</b></a>
+</div></header>
+<main id="conteudo">
+<section class="hero">
+<div class="hero-art" aria-hidden="true"><img src="./wallpaper%20pc%20berserk%20black%20_1308x736_.jpg" alt="Arte de Guts" loading="eager"></div>
+<div class="shell hero-inner">
+<div class="hero-copy"><p class="kicker"><span class="signal"></span> ANIME · MANGÁ · GAMES</p>
+<h1>PERSONAGENS<br><em>QUE FICAM.</em></h1>
+<p class="lead">Biografias, arte em movimento e colecionáveis de personagens que marcaram a cultura geek.</p>
+<div class="hero-actions"><a class="button primary" href="#colecao">Explorar personagens <span>↓</span></a><a class="button outline" href="loja.html">Ver a loja <span>→</span></a></div></div>
+<a class="hero-credit" href="./personagens/guts.html"><span class="kicker">EM DESTAQUE · BERSERK</span><strong>Guts <span>→</span></strong></a>
+</div>
+</section>
+<section class="shell section" id="colecao">
+<div class="section-heading"><div><p class="kicker"><span class="signal"></span> O ARQUIVO</p><h2>A coleção</h2></div><span id="character-count" class="count" aria-live="polite">7 personagens</span></div>
+<div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="character-search" type="search" placeholder="Buscar personagem ou universo" aria-label="Buscar personagem ou universo"></label><button class="button outline" id="favorites-only" type="button" aria-pressed="false">♡ Favoritos</button></div>
+<div class="card-grid"><article class="character-card" style="--accent:#f05b98;--tone:#211523" data-character="doflamingo" data-search="Donquixote Doflamingo One Piece Estratégia O estrategista de Dressrosa Capitão dos Piratas Donquixote e antigo soberano de Dressrosa, Doflamingo manipula pessoas e acontecimentos com a mesma precisão com que controla seus fios. Carismático e cruel, transforma influência, medo e ambição em armas — e raramente deixa o adversário perceber quem está conduzindo o jogo.">
+<a href="./personagens/doflamingo.html"><div class="card-image" data-id="doflamingo"><img src="./baixados%20(1).jpg" alt="Arte de Donquixote Doflamingo" loading="lazy"></div>
+<div class="card-copy"><span class="kicker">One Piece</span><h3>Donquixote Doflamingo</h3><span class="card-arrow" aria-hidden="true">→</span></div></a>
+<button type="button" class="favorite" data-favorite="doflamingo" aria-pressed="false" aria-label="Favoritar Donquixote Doflamingo">♡</button>
+</article><article class="character-card" style="--accent:#ae88ff;--tone:#1c1730" data-character="gengar" data-search="Gengar Pokémon Fantasia A sombra que adora uma travessura Pokémon do tipo Fantasma e Venenoso, Gengar espreita nas sombras e é conhecido por suas brincadeiras assustadoras. Seu sorriso travesso esconde um competidor perigoso: em batalha, combina velocidade, truques e ataques fantasmagóricos para surpreender quem baixa a guarda.">
+<a href="./personagens/gengar.html"><div class="card-image" data-id="gengar"><img src="./Gengar.jpg" alt="Arte de Gengar" loading="lazy"></div>
+<div class="card-copy"><span class="kicker">Pokémon</span><h3>Gengar</h3><span class="card-arrow" aria-hidden="true">→</span></div></a>
+<button type="button" class="favorite" data-favorite="gengar" aria-pressed="false" aria-label="Favoritar Gengar">♡</button>
+</article><article class="character-card" style="--accent:#f0a76a;--tone:#211d20" data-character="guts" data-search="Guts Berserk Dark fantasy O Espadachim Negro Marcado por uma vida de violência e perdas, Guts percorre um mundo brutal empunhando a gigantesca Dragon Slayer. Sua força não vem apenas da espada: é a teimosia de continuar lutando, proteger quem ama e enfrentar um destino que parece impossível de vencer.">
+<a href="./personagens/guts.html"><div class="card-image" data-id="guts"><img src="./wallpaper%20pc%20berserk%20black%20_1308x736_.jpg" alt="Arte de Guts" loading="lazy"></div>
+<div class="card-copy"><span class="kicker">Berserk</span><h3>Guts</h3><span class="card-arrow" aria-hidden="true">→</span></div></a>
+<button type="button" class="favorite" data-favorite="guts" aria-pressed="false" aria-label="Favoritar Guts">♡</button>
+</article><article class="character-card" style="--accent:#ff7957;--tone:#291a1c" data-character="soldier-11" data-search="Soldier 11 Zenless Zone Zero Ação Disciplina de fogo e aço Integrante de uma unidade de elite, Soldier 11 leva a disciplina militar para cada missão em Nova Eridu. Reservada e focada, ela trata o combate como um protocolo: movimentos precisos, golpes incendiários e compromisso absoluto com o objetivo — mesmo quando a situação sai do controle.">
+<a href="./personagens/soldier-11.html"><div class="card-image" data-id="soldier-11"><img src="./%F0%9D%97%A6%F0%9D%97%BC%F0%9D%97%B9%F0%9D%97%B1%F0%9D%97%B6%F0%9D%97%B2%F0%9D%97%BF%20%F0%9D%9F%AD%F0%9D%9F%AD%E2%80%94%20%F0%9D%92%81%F0%9D%92%81%F0%9D%92%81%20%E2%94%86%20%F0%9D%98%BE%F0%9D%99%9E%F0%9D%99%A3%F0%9D%99%9A%F0%9D%99%A2%F0%9D%99%96%F0%9F%8E%A5_.jpg" alt="Arte de Soldier 11" loading="lazy"></div>
+<div class="card-copy"><span class="kicker">Zenless Zone Zero</span><h3>Soldier 11</h3><span class="card-arrow" aria-hidden="true">→</span></div></a>
+<button type="button" class="favorite" data-favorite="soldier-11" aria-pressed="false" aria-label="Favoritar Soldier 11">♡</button>
+</article><article class="character-card" style="--accent:#61d4d0;--tone:#142528" data-character="veigar" data-search="Veigar League of Legends RPG O pequeno mestre do mal Pequeno yordle de poderes arcanos imensos, Veigar decidiu abraçar o papel de grande vilão de Runeterra. Seu ego é tão exagerado quanto sua magia: ele sonha dominar o mundo, mas por trás da pose sombria existe uma figura excêntrica, teatral e imprevisível.">
+<a href="./personagens/veigar.html"><div class="card-image" data-id="veigar"><img src="./%E2%9C%A8%E2%94%8BVeigar%E1%AC%B8.jpg" alt="Arte de Veigar" loading="lazy"></div>
+<div class="card-copy"><span class="kicker">League of Legends</span><h3>Veigar</h3><span class="card-arrow" aria-hidden="true">→</span></div></a>
+<button type="button" class="favorite" data-favorite="veigar" aria-pressed="false" aria-label="Favoritar Veigar">♡</button>
+</article><article class="character-card" style="--accent:#e8d17d;--tone:#27221b" data-character="angewomon" data-search="Angewomon Digimon Aventura A guardiã da esperança Uma Digimon Anjo de nível Perfeito, Angewomon representa proteção, coragem e esperança. Sua presença serena contrasta com o poder que libera contra as forças das trevas; quando seus companheiros estão ameaçados, ela luta com determinação e uma energia sagrada difícil de deter.">
+<a href="./personagens/angewomon.html"><div class="card-image" data-id="angewomon"><img src="./Angewomon%20(1).jpg" alt="Arte de Angewomon" loading="lazy"></div>
+<div class="card-copy"><span class="kicker">Digimon</span><h3>Angewomon</h3><span class="card-arrow" aria-hidden="true">→</span></div></a>
+<button type="button" class="favorite" data-favorite="angewomon" aria-pressed="false" aria-label="Favoritar Angewomon">♡</button>
+</article><article class="character-card" style="--accent:#9be3b1;--tone:#172521" data-character="frieren" data-search="Frieren Frieren: Beyond Journey’s End Fantasia Uma maga além do tempo Uma maga élfica que viveu muito além da duração de uma vida humana, Frieren participou da jornada que derrotou o Rei Demônio. Depois da aventura, passa a revisitar o mundo e a compreender melhor as pessoas que conheceu. Sua longa vida dá outro peso às lembranças, às despedidas e aos pequenos momentos.">
+<a href="./personagens/frieren.html"><div class="card-image" data-id="frieren"><img src="./Frieren%E3%80%902%E3%80%91.jpg" alt="Arte de Frieren" loading="lazy"></div>
+<div class="card-copy"><span class="kicker">Frieren: Beyond Journey’s End</span><h3>Frieren</h3><span class="card-arrow" aria-hidden="true">→</span></div></a>
+<button type="button" class="favorite" data-favorite="frieren" aria-pressed="false" aria-label="Favoritar Frieren">♡</button>
+</article></div>
+<p class="empty" id="character-empty" hidden>Nenhum personagem encontrado.</p>
+</section>
+<section class="shell shop-banner"><div><p class="kicker">LOJA GEEK</p><h2>Da tela para sua coleção.</h2><p>Pôsteres, camisetas, canecas e outros itens inspirados nos personagens do arquivo.</p></div><a class="button primary" href="loja.html">Explorar catálogo <span>→</span></a></section></main>
+<footer class="site-footer"><div class="shell"><a class="brand" href="./index.html"><span class="brand-icon" aria-hidden="true">✦</span><span>ARQUIVO<span class="brand-accent">GEEK</span></span></a><p>Projeto independente de cultura geek.</p><button type="button" class="button outline theme-toggle" aria-pressed="false">Tema claro</button><a href="https://github.com/Kalebreus/terminal-estudo">Ver no GitHub →</a></div></footer>
+</body></html>
